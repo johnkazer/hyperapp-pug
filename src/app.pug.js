@@ -24,7 +24,7 @@ function render(context, h) {
   var n3 = h('button', props, n3Child)
   n1Child.push(n3)
   var n4Child = []
-  var props = {attributes: runtime.compileAttrs([{name:'placeholder', val: placeholder},{name:'onchange', val: updateMe}], [])};
+  var props = {attributes: runtime.compileAttrs([{name:'placeholder', val: placeholder},{name:'onchange', val: [updateMe,targetValue]}], [])};
   if (props.attributes.id) props.key = props.attributes.id;
   var n4 = h('input', props, n4Child)
   n1Child.push(n4)

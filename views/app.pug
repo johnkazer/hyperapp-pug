@@ -4,5 +4,5 @@ div
     - var greeting = "Hello " + greet
     p(style={color: "red"}) #{greeting}
     button(id='clickMe' onclick=clickMe) Click Me
-    input(placeholder=placeholder onchange=updateMe)
+    input(placeholder=placeholder onchange=[updateMe,targetValue])
     p #{text}

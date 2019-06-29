@@ -2,14 +2,15 @@ import { app, h } from 'hyperapp'
 import { pugToView } from "./pug-to-view"
 
 const view = pugToView(h)
+const targetValue = e => e.target.value
 
 const clickMe = (state, event) => ({
     ...state,
     text: state.value
 })
-const updateMe = (state, event) => ({
+const updateMe = (state, value) => ({
     ...state,
-    value: event.target.value
+    value: value
 })
 
 const initialState = {
@@ -18,7 +19,8 @@ const initialState = {
     value: '',
     text: '',
     clickMe,
-    updateMe
+    updateMe,
+    targetValue
 }
 
 const node = document.getElementById('app')
