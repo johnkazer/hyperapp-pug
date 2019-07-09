@@ -18,9 +18,11 @@ const initialState = {
     placeholder: 'Write something here first',
     value: '',
     text: '',
-    clickMe,
-    updateMe,
-    targetValue
+    handler: {
+        clickMe,
+        updateMe,
+        targetValue
+    }
 }
 
 const node = document.getElementById('app')

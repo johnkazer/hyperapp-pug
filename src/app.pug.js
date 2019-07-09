@@ -19,12 +19,12 @@ function render(context, h) {
   n1Child.push(n2)
   var n3Child = []
   n3Child.push("Click Me")
-  var props = {attributes: runtime.compileAttrs([{name:'id', val: 'clickMe'},{name:'onclick', val: clickMe}], [])};
+  var props = {attributes: runtime.compileAttrs([{name:'id', val: 'clickMe'},{name:'onclick', val: handler.clickMe}], [])};
   if (props.attributes.id) props.key = props.attributes.id;
   var n3 = h('button', props, n3Child)
   n1Child.push(n3)
   var n4Child = []
-  var props = {attributes: runtime.compileAttrs([{name:'placeholder', val: placeholder},{name:'onchange', val: [updateMe,targetValue]}], [])};
+  var props = {attributes: runtime.compileAttrs([{name:'placeholder', val: placeholder},{name:'onchange', val: [handler.updateMe,handler.targetValue]}], [])};
   if (props.attributes.id) props.key = props.attributes.id;
   var n4 = h('input', props, n4Child)
   n1Child.push(n4)

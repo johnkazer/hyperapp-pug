@@ -3,6 +3,6 @@ div
     // receives the <greet> variable from the supplied state object
     - var greeting = "Hello " + greet
     p(style={color: "red"}) #{greeting}
-    button(id='clickMe' onclick=clickMe) Click Me
-    input(placeholder=placeholder onchange=[updateMe,targetValue])
+    button(id='clickMe' onclick=handler.clickMe) Click Me
+    input(placeholder=placeholder onchange=[handler.updateMe,handler.targetValue])
     p #{text}
