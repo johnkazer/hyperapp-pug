@@ -15,3 +15,5 @@ However, previously I've used Pug to define my UI templates. I like the ability 
 Maybe I'll come round eventually, but maybe I don't need to...
 
 Fortunately for me, the project [pug-vdom](https://github.com/batiste/pug-vdom) brings a virtualDOM (obviously) to Pug. So this repository is a demo for how Hyperapp can use Pug templates.
+
+There is also an 'express-server' branch which provides boiler-plate for adding an Express API.
