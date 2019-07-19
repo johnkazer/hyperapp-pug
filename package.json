@@ -15,6 +15,7 @@
   "dependencies": {
     "hyperapp": "2.0.0-beta.22",
     "pug-vdom": "^1.0.12",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "xstate": "^4.6.7"
   }
 }
