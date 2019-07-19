@@ -16,4 +16,6 @@ Maybe I'll come round eventually, but maybe I don't need to...
 
 Fortunately for me, the project [pug-vdom](https://github.com/batiste/pug-vdom) brings a virtualDOM (obviously) to Pug. So this repository is a demo for how Hyperapp can use Pug templates.
 
-There is also an 'express-server' branch which provides boiler-plate for adding an Express API.
+There are also branches which provide variations and extensions:
+* An 'express-server' branch which provides boiler-plate for adding an Express API
+* An 'xstate' branch which shows how to use a state machine to manage actions
