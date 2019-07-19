@@ -2,6 +2,8 @@
 See this [blog post](https://dev.to/johnkazer/hyperapp-with-pug-templates-517e) for an explanation of the approach.
 Read about [Pug](https://pugjs.org/api/getting-started.html) and [Hyperapp](https://github.com/jorgebucaran/hyperapp) to find out how to extend the functionality of this starter app.
 
+This branch adds basic state machine support (xstate) to show how the logic of part (or all) of an app's state can be regulated by state machine transitions rather than hidden away in the individual functions in actions.js
+
 The Hyperapp framework is wonderfully simple and has a number of features I like:
 
 * Clear functional approach to business logic
