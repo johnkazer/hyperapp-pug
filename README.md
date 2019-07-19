@@ -2,6 +2,8 @@
 See this [blog post](https://dev.to/johnkazer/hyperapp-with-pug-templates-517e) for an explanation of the approach.
 Read about [Pug](https://pugjs.org/api/getting-started.html) and [Hyperapp](https://github.com/jorgebucaran/hyperapp) to find out how to extend the functionality of this starter app.
 
+This branch adds boiler-plate support for an Express API.
+
 The Hyperapp framework is wonderfully simple and has a number of features I like:
 
 * Clear functional approach to business logic
