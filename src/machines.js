@@ -1,7 +1,7 @@
 import { Machine } from 'xstate'
 
 export const onlineMachine = Machine({
-    id: 'hyperapp-pug-machine',
+    id: 'onlineMachine',
     initial: 'online',
     states: {
         offline: {

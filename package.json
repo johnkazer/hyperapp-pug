@@ -4,16 +4,21 @@
   "description": "An instance of hyperapp which uses pug and pug-vdom rather than the default vdom",
   "main": "main.js",
   "scripts": {
-    "start": "node ./compilePug.js && parcel ./src/index.html"
+    "start": "node ./compilePug.js && parcel ./src/index.html",
+    "cypress:open": "cypress open"
   },
   "author": "John Kazer",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "cypress": "^3.4.1",
     "parcel": "^1.12.3",
     "virtual-dom": "^2.1.1"
   },
   "dependencies": {
     "hyperapp": "2.0.0-beta.22",
+    "@babel/runtime": "^7.4.5",
     "pug-vdom": "^1.0.12",
     "pug": "^2.0.4",
     "xstate": "^4.6.7"
