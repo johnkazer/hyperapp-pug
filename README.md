@@ -1,6 +1,6 @@
 # hyperapp-pug
 See this [blog post](https://dev.to/johnkazer/hyperapp-with-pug-templates-517e) for an explanation of the approach.
-Read about [Pug](https://pugjs.org/api/getting-started.html) and [Hyperapp](https://github.com/jorgebucaran/hyperapp) to find out how to extend the functionality of this starter app.
+Read about [Pug](https://pugjs.org/api/getting-started.html) and [Hyperapp](https://github.com/jorgebucaran/hyperapp) to find out how to extend the functionality of this starter app (currently supports Pug v2.0.4 and Hyperapp v2.0.12).
 
 The Hyperapp framework is wonderfully simple and has a number of features I like:
 
@@ -14,7 +14,7 @@ However, previously I've used Pug to define my UI templates. I like the ability 
 
 Maybe I'll come round eventually, but maybe I don't need to...
 
-Fortunately for me, the project [pug-vdom](https://github.com/batiste/pug-vdom) brings a virtualDOM (obviously) to Pug. So this repository is a demo for how Hyperapp can use Pug templates.
+Fortunately for me, the project [pug-vdom](https://github.com/batiste/pug-vdom) brings a virtualDOM (obviously) to Pug. So this repository is a demo for how Hyperapp can use Pug templates. Note that I had to tweak pug-vdom slightly to handle textNodes equivalently to Hyperapp, so there is a local copy of pug-vdom.js (version 1.1.2).
 
 There are also branches which provide variations and extensions:
 * An 'express-server' branch which provides boiler-plate for adding an Express API
