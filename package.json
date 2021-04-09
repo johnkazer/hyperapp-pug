@@ -9,8 +9,7 @@
   "author": "John Kazer",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "1.12.4",
-    "virtual-dom": "2.1.1"
+    "parcel": "1.12.4"
   },
   "dependencies": {
     "hyperapp": "2.0.12",
