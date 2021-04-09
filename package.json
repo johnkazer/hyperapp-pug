@@ -14,6 +14,6 @@
   "dependencies": {
     "hyperapp": "2.0.12",
     "pug-vdom": "1.1.2",
-    "pug": "2.0.4"
+    "pug": "3.0.1"
   }
 }
