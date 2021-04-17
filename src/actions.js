@@ -1,7 +1,6 @@
 import { onlineMachine } from './machines'
 
 const actions = ( () => {
-    const targetValue = e => e.target.value
 
     const updateStatus = (state, data) => {
         const previousStatus = state.onlineState.value
@@ -13,15 +12,14 @@ const actions = ( () => {
     const clickMe = (state, event) => {
         return {
             ...state,
-            text: state.value
+            userText: state.value
         }
     }
-    const updateMe = (state, value) => ({
+    const updateMe = (state, event) => ({
         ...state,
-        value: value
+        value: event.target.value
     })
     return Object.freeze({
-        targetValue,
         updateStatus,
         clickMe,
         updateMe
