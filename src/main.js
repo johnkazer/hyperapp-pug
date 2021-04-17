@@ -1,27 +1,25 @@
-import { app, h } from 'hyperapp'
+import { app, h, text } from 'hyperapp'
 import { pugToView } from "./pug-to-view"
 
-const view = pugToView(h)
-const targetValue = e => e.target.value
+const view = pugToView(h, text)
 
 const clickMe = (state, event) => ({
     ...state,
-    text: state.value
+    userText: state.value
 })
-const updateMe = (state, value) => ({
+const updateMe = (state, event) => ({
     ...state,
-    value: value
+    value: event.target.value
 })
 
 const initialState = {
     greet: 'friends',
     placeholder: 'Write something here first',
     value: '',
-    text: '',
+    userText: '',
     handler: {
         clickMe,
-        updateMe,
-        targetValue
+        updateMe
     }
 }
 

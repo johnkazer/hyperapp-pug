@@ -1,7 +1,7 @@
 {
   "name": "hyperapp-pug",
-  "version": "1.0.0",
-  "description": "An instance of hyperapp which uses pug and pug-vdom rather than the default vdom",
+  "version": "1.0.1",
+  "description": "An instance of hyperapp which uses pug and pug-vdom rather than the default vdom. Express boiler-plate version",
   "main": "main.js",
   "scripts": {
     "start": "node ./bin/www",
@@ -14,8 +14,8 @@
     "virtual-dom": "^2.1.1"
   },
   "dependencies": {
-    "hyperapp": "2.0.0-beta.22",
-    "pug-vdom": "^1.0.12",
+    "hyperapp": "2.0.12",
+    "pug-vdom": "1.1.2",
     "pug": "^2.0.4",
     "express": "^4.13.3",
     "body-parser": "^1.13.3",
