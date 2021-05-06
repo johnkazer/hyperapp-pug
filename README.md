@@ -37,4 +37,4 @@ div
     button(id='clickMe' onclick=handler.clickMe) Click Me
     p #{userText}
 ```
-![image](https://user-images.githubusercontent.com/30650393/114270876-9ed25d80-9a06-11eb-8bc6-0b6746d4dc81.png)
+![image](https://user-images.githubusercontent.com/30650393/117368158-0d49f480-aebb-11eb-827f-cafe9b36d8ce.png)
