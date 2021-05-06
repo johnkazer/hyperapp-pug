@@ -1,7 +1,12 @@
+mixin makeHeading (content)
+    h1= content
+    block
 // Need a root div to grab as the start of the view
 div
     // receives the <greet> variable from the supplied state object
     - var greeting = "Hello " + greet
+    +makeHeading("Demo using Pug templates with Hyperapp v2")
+        p More stuff if needed but here just to demo adding a block to a mixin
     p(style={color: "red"}) #{greeting}
     input(size="60" placeholder=placeholder onchange=handler.updateMe)
     button(id='clickMe' onclick=handler.clickMe) Click Me

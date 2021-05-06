@@ -23,13 +23,18 @@ There are also branches which provide variations and extensions:
 As a simple example, the wrapper processes the following standard Pug code into a very simple app with a couple (change and click) event handlers:
 
 ```pug
+mixin makeHeading (content)
+    h1= content
+    block
+// Need a root div to grab as the start of the view
 div
     // receives the <greet> variable from the supplied state object
     - var greeting = "Hello " + greet
+    +makeHeading("Demo using Pug templates with Hyperapp v2")
+        p More stuff if needed but here just to demo adding a block to a mixin
     p(style={color: "red"}) #{greeting}
     input(size="60" placeholder=placeholder onchange=handler.updateMe)
     button(id='clickMe' onclick=handler.clickMe) Click Me
-    // <userText> also from state
     p #{userText}
 ```
 ![image](https://user-images.githubusercontent.com/30650393/114270876-9ed25d80-9a06-11eb-8bc6-0b6746d4dc81.png)
